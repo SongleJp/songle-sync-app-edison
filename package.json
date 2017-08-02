@@ -1,0 +1,15 @@
+{
+  "name": "songle-sync-client-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/node": "^4.2.11"
+  }
+}
