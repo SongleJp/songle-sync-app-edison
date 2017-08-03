@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@types/node": "^4.2.11"
+    "@types/node": "^4.2.16",
+    "songle-widget": "latest"
   }
 }

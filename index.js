@@ -3,12 +3,6 @@ var grove = require("jsupm_grove"), LEDBar = require("jsupm_my9221"), led = new 
 var SongleWidget = require("songle-widget");
 // トークンの情報を取ってくる
 var settings = require("./settings");
-// Songle Widget IoMT APIのエンドポイント指定
-SongleWidget.System.defaultEndpointWebClientProtocol = "https:";
-SongleWidget.System.defaultEndpointWebClientHost = "api.songle.jp";
-SongleWidget.System.defaultEndpointWebSocketProtocol = "https:";
-SongleWidget.System.defaultEndpointWebSocketHost = "api.songle.jp";
-SongleWidget.System.showLogMode = true;
 // ビート情報と基本情報をもらってくる
 var player = new SongleWidget.Player({
     accessToken: settings.tokens.access
