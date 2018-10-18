@@ -1,15 +1,15 @@
 // LEDをチカチカさせたい
 var grove = require("jsupm_grove"), LEDBar = require("jsupm_my9221"), led = new grove.GroveLed(2), bar = new LEDBar.GroveLEDBar(8, 9), bar2 = new LEDBar.GroveLEDBar(6, 7);
-var SongleWidget = require("songle-widget");
+var Songle = require("songle-api");
 // トークンの情報を取ってくる
 var settings = require("./settings");
 // ビート情報と基本情報をもらってくる
-var player = new SongleWidget.Player({
+var player = new Songle.Player({
     accessToken: settings.tokens.access
 });
-player.addPlugin(new SongleWidget.Plugin.Beat());
-player.addPlugin(new SongleWidget.Plugin.Chorus());
-player.addPlugin(new SongleWidget.Plugin.SongleSync());
+player.addPlugin(new Songle.Plugin.Beat());
+player.addPlugin(new Songle.Plugin.Chorus());
+player.addPlugin(new Songle.Plugin.SongleSync());
 // 何かあったらコンソールに書き出す
 player.on("play", function (ev) { return console.log("play"); });
 player.on("seek", function (ev) { return console.log("seek"); });

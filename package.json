@@ -11,6 +11,6 @@
   "devDependencies": {},
   "dependencies": {
     "@types/node": "^4.2.16",
-    "songle-widget": "latest"
+    "songle-api": "latest"
   }
 }
